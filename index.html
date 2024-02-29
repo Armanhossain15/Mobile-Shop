@@ -12,13 +12,55 @@
 
 <body>
     <header>
+        <div class="navbar bg-base-100 container mx-auto py-4">
+            <div class="navbar-start ">
+                <div class="dropdown">
+                    <div tabindex="0" role="button" class="btn btn-ghost lg:hidden">
+                        <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" fill="none" viewBox="0 0 24 24"
+                            stroke="currentColor">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                d="M4 6h16M4 12h8m-8 6h16" />
+                        </svg>
+                    </div>
+                    <ul tabindex="0"
+                        class="menu menu-sm dropdown-content mt-3 z-[1] p-2 shadow bg-base-100 rounded-box w-52 ">
+                        <li><a>Home</a></li>
+                        <li><a>About</a></li>
+                        <li><a>Contact</a></li>
+                    </ul>
+                </div>
+                <a class="btn btn-ghost text-xl lg:text-3xl uppercase font-extrabold">Mobile<span class="text-[#0D6EFD]">Shop</span>
 
+                </a>
+            </div>
+            <div class="navbar-center hidden lg:flex">
+                <ul class="menu menu-horizontal px-1 text-lg font-semibold">
+                    <li><a>Home</a></li>
+                    <li><a>About</a></li>
+                    <li><a>Contact</a></li>
+                </ul>
+            </div>
+            <div class="navbar-end">
+                <a class="btn">Login</a>
+            </div>
+        </div>
     </header>
     <main>
+        <!-- hero section -->
+        <div class="hero  bg-base-400 py-10">
+            <div class="hero-content flex-col-reverse  container mx-auto">
+              <img src="banner.png" class=" lg:max-w-2xl rounded-lg " />
+              <div>
+                <h1 class=" text-2xl lg:text-5xl font-bold text-left lg:text-center">Apple Iphone 13 Pro Max</h1>
+                <p class="py-6 lg:w-4/6 lg:mx-auto text-left lg:text-center">There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some form, by injected humou.</p>
+                <div class="lg:text-center"><button class="btn btn-primary">Buy Now</button></div>
+              </div>
+            </div>
+          </div>
         <!-- input field -->
         <section class="bg-gray-100 py-5 text-center mb-5">
             <input id="input-field" type="text" placeholder="Search your phone"
-                class="input input-bordered w-full max-w-xs" />
+                class="input input-bordered lg:w-full max-w-xs" />
             <button onclick="handleSearch()" class="btn btn-primary">Search</button>
 
         </section>
@@ -63,6 +105,40 @@
         </section>
     </main>
 
+    <footer class="footer mt-20 p-10 bg-gray-950 text-white text-base-content">
+        <nav>
+            <h6 class="footer-title">Services</h6>
+            <a class="link link-hover">Branding</a>
+            <a class="link link-hover">Design</a>
+            <a class="link link-hover">Marketing</a>
+            <a class="link link-hover">Advertisement</a>
+        </nav>
+        <nav>
+            <h6 class="footer-title">Company</h6>
+            <a class="link link-hover">About us</a>
+            <a class="link link-hover">Contact</a>
+            <a class="link link-hover">Jobs</a>
+            <a class="link link-hover">Press kit</a>
+        </nav>
+        <nav>
+            <h6 class="footer-title">Legal</h6>
+            <a class="link link-hover">Terms of use</a>
+            <a class="link link-hover">Privacy policy</a>
+            <a class="link link-hover">Cookie policy</a>
+        </nav>
+        <form>
+            <h6 class="footer-title">Newsletter</h6>
+            <fieldset class="form-control w-80">
+                <label class="label">
+                    <span class="label-text text-white">Enter your email address</span>
+                </label>
+                <div class="join">
+                    <input type="text" placeholder="username@site.com" class="input input-bordered join-item" />
+                    <button class="btn btn-primary join-item">Subscribe</button>
+                </div>
+            </fieldset>
+        </form>
+    </footer>
 
 
     <!-- script file -->
