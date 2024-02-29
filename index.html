@@ -1,5 +1,6 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" data-theme="light">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -8,8 +9,34 @@
     <link href="https://cdn.jsdelivr.net/npm/daisyui@4.7.2/dist/full.min.css" rel="stylesheet" type="text/css" />
     <script src="https://cdn.tailwindcss.com"></script>
 </head>
+
 <body>
+    <header>
+        
+    </header>
+    <main>
+        <!-- input field -->
+        <section class="bg-gray-100 py-5 text-center mb-5">
+            <input id="input-field" type="text" placeholder="Search your phone" class="input input-bordered w-full max-w-xs" />
+            <button onclick="handleSearch()" class="btn btn-primary">Search</button>
+
+        </section>
+        <!-- search result -->
+        <section>
+            <div id="phone-container" class="container mx-auto grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-y-7 ">
+            </div>
+        </section>
+        <!-- show all button -->
+        <div id="btn-show-all" class="text-center my-8 hidden">
+            <button class="btn btn-primary btn-wide">SHOW ALL</button>
+
+        </div>
+    </main>
+
+
+
     <!-- script file -->
     <script src="js/phone.js"></script>
 </body>
+
 </html>
